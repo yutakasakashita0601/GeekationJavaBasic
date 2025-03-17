@@ -6,7 +6,10 @@ public class MethodPractice {
 		int a = 10;
 		int b = 5;
 		
-		console(a,b);
+		console(addition(a,b));
+		console(subtraction(a,b));
+		console(multiplication(a,b));
+		console(division(a,b));
 	}
 	
 	public static int addition(int a, int b) {
@@ -25,11 +28,8 @@ public class MethodPractice {
 		return a/b;
 	}
 	
-	public static void console(int a, int b) {
-		System.out.println("計算結果は" + addition(a, b) + "です。");
-		System.out.println("計算結果は" + subtraction(a, b) + "です。");
-		System.out.println("計算結果は" + multiplication(a, b) + "です。");
-		System.out.println("計算結果は" + division(a, b) + "です。");
+	public static void console(int result) {
+		System.out.println("計算結果は" + result + "です。");
 	}
 
 }
